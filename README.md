@@ -3,6 +3,8 @@ This repository serves as a place to centralize the NeoVim config I use.
 
 I wrote this config from scratch, and there are still [issues to fix](https://github.com/evangipson/neovim-config/issues). My main goal of this config was to have a nice looking minimal NeoVim with a file tree and a C# [LSP](https://neovim.io/doc/user/lsp.html).
 
+![Screenshot of my NeoVim config](./neovim-screenshot.png)
+
 ## Prerequisites
 1. The latest version of [NeoVim](https://neovim.io/)
 1. The latest version of [Microsoft.CodeAnalysis.LanguageServer](https://dev.azure.com/azure-public/vside/_artifacts/feed/vs-impl) that matches the target environment
@@ -31,8 +33,3 @@ I wrote this config from scratch, and there are still [issues to fix](https://gi
 - [OneDark](https://github.com/navarasu/onedark.nvim)
 - [Roslyn LSP](https://github.com/seblj/roslyn.nvim)
 - [Today](https://github.com/VVoruganti/today.nvim)
-
-## Incoming Features
-- Figuring out what is wrong with the Roslyn C# LSP
-- Custom NeoVim start screen with hotkeys for common commands
-- Write a script to run the install process (possibly create a custom distro of NeoVim)
