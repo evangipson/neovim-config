@@ -20,6 +20,14 @@ local function ensure_default_setup()
       local target_template = config.local_root .. "/jrnl.md"
 
       if vim.fn.filereadable(target_template) == 0 then
+        local template_file = io.open(default_template, "r")
+        local template_file_content = template_file:read("*a")
+
+        template_file:close()
+        local f = io.open(target_template, "w")
+        f:write(template_file_content)
+        f:close()
+
         vim.fn.system(string.format("cp %s %s", default_template, target_template))
 		--vim.fn.filecopy(default_template, target_template)
       end
